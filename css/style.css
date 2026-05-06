@@ -15,8 +15,8 @@
   --fw-bold: 900;
 
   --clr-light: #ffffff;
-  --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-dark: #133043;
+  --clr-accent: #000000;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -301,12 +301,13 @@ header {
 
   .section__subtitle--intro {
     align-self: start;
-    grid-column: -1/1;
+    /* grid-column: -1/1; */
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
+    color: white;
+    /* left: -1.5em; */
+    /* width: calc(100% + 1.5em); */
   }
 }
 
