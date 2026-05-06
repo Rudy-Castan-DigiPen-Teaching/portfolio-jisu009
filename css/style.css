@@ -15,8 +15,8 @@
   --fw-bold: 900;
 
   --clr-light: #ffffff;
-  --clr-dark: #133043;
-  --clr-accent: #000000;
+  --clr-dark: #102a3a;;
+  --clr-accent: #3f7fa6;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -373,7 +373,7 @@ header {
 @media (min-width: 600px) {
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 250px;
     grid-template-areas:
       "title img"
       "subtitle img"
