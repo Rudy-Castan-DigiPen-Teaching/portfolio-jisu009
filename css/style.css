@@ -551,3 +551,40 @@ header {
   margin: 0 auto; /* Centering */
   border: none;
 }
+
+/* Subtle scroll / hover animation */
+.intro__img,
+.about-me__img,
+.portfolio__item,
+.service,
+.resume-section .resume-item {
+  transition:
+    transform 350ms ease,
+    box-shadow 350ms ease,
+    opacity 350ms ease;
+}
+
+.intro__img:hover,
+.about-me__img:hover,
+.portfolio__item:hover,
+.service:hover,
+.resume-section .resume-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0.35em 0.35em 1em rgba(0, 0, 0, 0.28);
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+.hide-on-scroll {
+  opacity: 0;
+  transform: translateY(35px) scale(0.96);
+}
+
+.show-on-scroll {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
