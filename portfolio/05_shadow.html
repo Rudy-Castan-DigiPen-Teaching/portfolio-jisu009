@@ -10,7 +10,7 @@
 
     <!-- Help auto scale for desktop & mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDENT TODO Website</title>
+    <title>STUDENT Jisu Son Website</title>
 
     <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="../external/normalize.css">
@@ -69,17 +69,30 @@
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+     <p>
+         Shadow Mapping is a 3D graphics project that demonstrates real-time shadow rendering using a light source as a
+         perspective camera. The scene is first rendered into a depth map from the light's point of view, and that depth
+         information is then used during the main render pass to determine whether objects are in shadow.
+        </p>
 
-        <h2>Tasks Completed</h2>
-        <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
-        </ul>
+     <h2>Tasks Completed</h2>
+      <ul>
+         <li>Implemented shadow mapping using a depth framebuffer and a perspective light camera.</li>
+            <li>Added support for depth textures and RGBA textures in the Texture class.</li>
+            <li>Implemented camera ViewMatrix and ToWorldMatrix calculations for correct space transformations.</li>
+            <li>Created framebuffer setup logic with depth and color texture attachments.</li>
+            <li>Updated shaders to perform shadow map lookup, depth comparison, gamma correction, and exponential fog.</li>
+            <li>Added debug visualizations for the light frustum and shadow map texture.</li>
+            <li>Integrated ImGui controls for adjusting shadow map size, light settings, and rendering options.</li>
+     </ul>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+      <p>
+        This project helped me better understand how multiple render passes work together in a real-time graphics
+        pipeline. The most challenging part was connecting the framebuffer, camera matrices, and shader calculations
+        correctly. Through debugging the shadow map and light frustum, I learned how important visualization tools are
+        when developing graphics features.
+        </p>
     </div>
 
     <div class="portfolio-item-individual">
@@ -89,15 +102,15 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:my.email@digipen.edu" class="footer__link">my.email@digipen.edu</a>
+        <a href="mailto:my.email@digipen.edu" class="footer__link">jisu.son@digipen.edu</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/mylinkedinid">
+                <a class="social-list__link" href="https://www.linkedin.com/in/jisu-son">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/mygithubid">
+                <a class="social-list__link" href="https://github.com/jisu009"">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
