@@ -10,7 +10,7 @@
 
     <!-- Help auto scale for desktop & mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDENT TODO Website</title>
+    <title>STUDENT JISU SON Website</title>
 
     <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="../external/normalize.css">
@@ -67,20 +67,32 @@
         <img src="../img/portfolio_thumbnails/06_value.jpg" alt="a picture of this portfolio item" class="intro__img">
     </section>
 
-    <div class="portfolio-item-individual">
-        <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+<div class="portfolio-item-individual">
+    <h2>Project Overview</h2>
+    <p>
+        This project focused on implementing Value Noise and displaying the generated noise as a texture.
+        The goal was to create smooth procedural patterns by using random values, permutation hashing,
+        smoothing functions, and interpolation.
+    </p>
 
-        <h2>Tasks Completed</h2>
-        <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
-        </ul>
+    <h2>Tasks Completed</h2>
+    <ul>
+        <li>Added the Value Noise demo to the project and registered it in the demo factory.</li>
+        <li>Implemented 1D, 2D, and 3D value noise using linear, bilinear, and trilinear interpolation.</li>
+        <li>Used permutation hashing and different smoothing methods to generate smoother noise results.</li>
+        <li>Added texture upload support so the generated color data could be displayed on screen.</li>
+        <li>Created simple vertex and fragment shaders to render the noise texture with tiling controls.</li>
+    </ul>
 
-        <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
-    </div>
+    <h2>Reflection</h2>
+    <p>
+        The most challenging part of this project was understanding how integer grid coordinates,
+        random values, and interpolation work together to create smooth noise. I also had to be careful
+        with texture coordinates and shader uniform names so the generated texture displayed correctly.
+        Through this project, I learned how procedural textures can be generated in C++ and updated on
+        the GPU for real-time rendering.
+    </p>
+</div>
 
     <div class="portfolio-item-individual">
         <h2>Demo</h2>
@@ -92,12 +104,12 @@
         <a href="mailto:my.email@digipen.edu" class="footer__link">my.email@digipen.edu</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/mylinkedinid">
+                <a class="social-list__link" href="https://www.linkedin.com/in/jisu-son">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/mygithubid">
+                <a class="social-list__link" href="https://github.com/jisu009">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
